@@ -1,0 +1,23 @@
+.navbar{
+    background-color: #6a0000;
+    color: #fbe3d1;
+    font-family: 'Aboreto', cursive;
+}
+.container{
+    justify-content: space-between;
+}
+.links {
+    color: #fbe3d1;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+.links:hover{
+    color:#6a0000;
+    background-color: #fff2f2;
+    padding: 5px 10px;
+    border-radius: 25px;
+}
+.logo{
+    cursor: default;
+}

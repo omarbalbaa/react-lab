@@ -1,0 +1,19 @@
+.shop-global{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.header{
+    color: #6a0000;
+}
+
+.card{
+    min-height: 100%;
+    justify-content: space-between;
+}
+
+.card .card-content{
+    background-color: #fff2f2;
+}
+.card .card-content .rate {
+    font-size: small;
+}
