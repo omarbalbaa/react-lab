@@ -1,16 +1,26 @@
-import { useState } from "react";
+//import { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import {Link} from 'react-router-dom';
+import { decrementAction, incrementAction } from "../../redux/counterSlice";
 
 function Counter() {
-  const [count, setCount] = useState(0);
+  //const [count, setCount] = useState(0);
+  const count = useSelector((state) => state.counterReducer.counter);
+  console.log(count);
+  const dispatch = useDispatch();
+  
   const countDown = () => {
-    if (count > 0) {
-      setCount(count - 1);
-    }
+    if (count > 0)
+      dispatch(decrementAction(1));
+    // if (count > 0) {
+    //   setCount(count - 1);
+    // }
   };
   const countUp = () => {
-    setCount(count + 1);
+    dispatch(incrementAction(1));
+    //setCount(count + 1);
   };
+
   return (
     <div className="text-center">
       <div className="card text-center">

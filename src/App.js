@@ -5,6 +5,8 @@ import Home from "./components/Home/home";
 import Counter from "./components/counter/counter";
 import Navbar from "./components/navbar/navbar";
 import Shop from "./components/Shop/shop";
+import SignUp from "./components/signup/signup";
+
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 function App() {
   return (
@@ -14,6 +16,7 @@ function App() {
         <Route path="/" element={<Home/>}/>
         <Route path="/counter" element={<Counter />}/>
         <Route path="/shop" element={<Shop/>}/>
+        <Route path="/signup" element={<SignUp/>}/>
       </Routes>
     </Router>
   );

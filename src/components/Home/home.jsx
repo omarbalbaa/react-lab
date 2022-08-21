@@ -12,6 +12,12 @@ function Home() {
         <h3 className="my-3">
           Day 2: <Link to="/shop" className="homelinks">Online Store</Link>
         </h3>
+        <h3 className="my-3">
+          Day 3: <Link to="/counter" className="homelinks">Updated Counter with Redux</Link>
+        </h3>
+        <h3 className="my-3">
+          Day 4: <Link to="/signup" className="homelinks">Sign Up</Link>
+        </h3>
       </div>
     </div>
   );

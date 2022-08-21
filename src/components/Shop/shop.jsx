@@ -24,7 +24,7 @@ function Shop() {
         <div className="row">
           {products.map((product) => {
             return (
-              <div className="col-lg-2 col-md-4 col-6 my-2">
+              <div key={product.id} className="col-lg-2 col-md-4 col-6 my-2">
                 <div className="card">
                   <div>
                     <img
